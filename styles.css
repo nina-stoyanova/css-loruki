@@ -15,12 +15,13 @@ body {
 }
 
 /* HEADER SECTION */
+
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(4,122,237);
+    background-color: rgb(4, 122, 237);
     font-weight: 300;
 }
 
@@ -29,9 +30,7 @@ body {
     color: white;
 }
 
-.navigation__items {
-
-}
+.navigation__items {}
 
 .navigation__item {
     padding: 10px;
@@ -44,10 +43,26 @@ body {
 }
 
 /* TITLE SECTION  */
+
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(4, 122, 237);
+}
+
+.title__info {
+    color: white;
+    padding: 100px 50px 100px 0px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+    padding-bottom: 30px;
 }
 
 .demo__form__input {
@@ -56,4 +71,25 @@ body {
 
 .demo__form__submit {
     display: block;
+}
+
+.title__heading {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.demo {
+    background-color: white;
+    padding: 50px 40px 50px 40px;
+    border-radius: 6px;
+    margin-right: 80px;
+}
+
+a {
+    border-radius: 6px;
+    padding: 10px 25px 10px 25px;
+    border: 1px white solid;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
 }
