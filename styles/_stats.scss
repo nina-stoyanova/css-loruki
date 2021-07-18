@@ -1,17 +1,15 @@
+@import "mixins";
+
 .stats-items {
-    display: flex;
-    justify-content: space-around;
+    @include flex-around;
     margin-top: 40px;
 
     .stats-item {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
 
     .icon {
-        display: flex;
-        justify-content: center;
-
+        @include flex-center;
         
         .img {
             width: 50px;

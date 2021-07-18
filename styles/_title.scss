@@ -1,13 +1,15 @@
+@import "mixins";
+@import "variables";
+
 .title {
-    display: flex;
-    justify-content: space-around;
+    @include flex-around;
     align-items: center;
     background-color: rgb(4, 122, 237);
     padding-top: 95px;
     padding-bottom: 50px;
 
     .title__info {
-        color: white;
+        color: $font-white;
         flex-basis: 50%;
     }
 
@@ -21,13 +23,14 @@
         border-radius: 6px;
         padding: 10px 25px 10px 25px;
         border: 1px white solid;
-        color: white;
+        color: $font-white;
         text-decoration: none;
         font-weight: 300;
     }
 
     .title__description{
         font-weight: 300;
+        padding-bottom: 20px;
     }
 }
 

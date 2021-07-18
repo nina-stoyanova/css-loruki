@@ -1,6 +1,8 @@
+@import "mixins";
+@import "variables";
+
 .navigation {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     align-items: center;
     padding: 10px 20px;
     background-color: rgb(4, 122, 237);
@@ -8,13 +10,13 @@
 
     .navigation__logo {
         font-size: 30px;
-        color: white;
+        color:$font-white;
     }
     
     .navigation__item {
         padding: 10px;
         text-decoration: none;
-        color: white;
+        color: $font-white;
     }
     
     .navigation__item:hover {

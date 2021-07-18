@@ -55,6 +55,7 @@
 }
 .title .title__description {
   font-weight: 300;
+  padding-bottom: 20px;
 }
 
 .demo {
@@ -80,6 +81,7 @@
   color: white;
   border-radius: 5px;
   border-color: #047aed;
+  margin-top: 30px;
 }
 
 .stats-items {
