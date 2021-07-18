@@ -1,0 +1,30 @@
+
+.demo {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    flex-basis: 30%;
+
+    .demo__heading {
+        font-weight: 300;
+    }
+    
+    .demo__form__input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .demo__form__submit {
+        display: block;
+        padding: 8px 28px;
+        background-color: rgb(4, 122, 237);
+        color: white;
+        border-radius: 5px;
+        border-color: rgb(4, 122, 237);
+    }
+    
+
+}

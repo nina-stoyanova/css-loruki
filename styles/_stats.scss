@@ -1,0 +1,35 @@
+.stats-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    .stats-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+
+        
+        .img {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    .numbers {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        color: rgb(4, 122, 237);
+        text-align: center;
+    }
+}
+

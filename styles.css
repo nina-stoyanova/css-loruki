@@ -1,152 +1,129 @@
-* {
-    border: 1px solid red;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-.container {
-    max-width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* HEADER SECTION */
-
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(4, 122, 237);
-    font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #047aed;
+  font-weight: 300;
 }
-
-.navigation__logo {
-    font-size: 30px;
-    color: white;
+.navigation .navigation__logo {
+  font-size: 30px;
+  color: white;
 }
-
-.navigation__item {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
+.navigation .navigation__item {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
 }
-
-.navigation__item:hover {
-    border-bottom: 2px solid white;
-}
-
-/* TITLE SECTION  */
-
-.title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(4, 122, 237);
-    padding-top: 95px;
-    padding-bottom: 50px;
-}
-
-.title__info {
-    color: white;
-    flex-basis: 50%;
-}
-
-h1 {
-    padding-bottom: 20px;
-}
-
-p {
-    font-weight: 300;
-}
-
-.demo__form__input {
-    display: block;
-    border: none;
-    border-bottom: 1px solid gray;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.demo__form__submit {
-    display: block;
-    padding: 8px 28px;
-    background-color: rgb(4, 122, 237);
-    color: white;
-    border-radius: 5px;
-    border-color: rgb(4, 122, 237);
-}
-
-.title__heading {
-    font-weight: 300;
-    font-size: 2.4rem;
-}
-
-.demo {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    flex-basis: 30%;
-}
-
-.demo__heading {
-    font-weight: 300;
-}
-
-.title__link {
-    border-radius: 6px;
-    padding: 10px 25px 10px 25px;
-    border: 1px white solid;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-/* STATISTICS SECTION  */
-
-.stats-items {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
-.stats-item {
-    display: flex;
-    flex-direction: column;
+.navigation .navigation__item:hover {
+  border-bottom: 2px solid white;
 }
 
 .statistics__info {
-    margin-top: 80px;
-    text-align: center;
+  margin-top: 80px;
+  text-align: center;
+}
+.statistics__info .statistics__heading {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.statistics__heading {
-    font-size: 1rem;
-    font-weight: 400;
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #047aed;
+  padding-top: 95px;
+  padding-bottom: 50px;
+}
+.title .title__info {
+  color: white;
+  flex-basis: 50%;
+}
+.title .title__heading {
+  font-weight: 300;
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+}
+.title .title__link {
+  border-radius: 6px;
+  padding: 10px 25px 10px 25px;
+  border: 1px white solid;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+.title .title__description {
+  font-weight: 300;
 }
 
-.icon {
-    display: flex;
-    justify-content: center;
+.demo {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  flex-basis: 30%;
+}
+.demo .demo__heading {
+  font-weight: 300;
+}
+.demo .demo__form__input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  margin-top: 20px;
+}
+.demo .demo__form__submit {
+  display: block;
+  padding: 8px 28px;
+  background-color: #047aed;
+  color: white;
+  border-radius: 5px;
+  border-color: #047aed;
 }
 
-.numbers {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 2rem;
+.stats-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.stats-items .stats-item {
+  display: flex;
+  flex-direction: column;
+}
+.stats-items .icon {
+  display: flex;
+  justify-content: center;
+}
+.stats-items .icon .img {
+  width: 50px;
+  height: 50px;
+}
+.stats-items .numbers {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.stats-items .text {
+  font-size: 1.2rem;
+  color: #047aed;
+  text-align: center;
 }
 
-.img {
-    width: 50px;
-    height: 50px;
+* {
+  border: 1px solid pink;
+  margin: 0;
+  padding: 0;
 }
 
-.text {
-    font-size: 1.2rem;
-    color: rgb(4, 122, 237);
-    text-align: center;
+body {
+  font-family: "Lato", sans-serif;
 }
+
+.container {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
