@@ -1,25 +1,25 @@
+
+
 .example{
-    display: flex;
-    justify-content: space-around;
+    @include flex-around;
     margin-bottom: 50px;
     margin-top: 50px;
+
+    .example__img{
+        width: 600px;
+        border-radius: 7px;
+    }
+    
+    .example-descriptions{
+        @include flex-column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+    
+    .example__description{  
+        padding: 20px 10px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+    }
 }    
 
-.example__img{
-    width: 600px;
-    border-radius: 7px;
-}
-
-.example-descriptions{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 1.2rem;
-}
-
-.example__description{
-    border: 1px solid gray;
-    padding: 20px 10px;
-    border-radius: 7px;
-    box-shadow: 0px 2px 11px 3px rgba(0,0,0,0.48);
-}

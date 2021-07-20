@@ -1,26 +1,33 @@
-@import "mixins";
+@import "layout-mixins";
+@import "typography-mixins";
+@import "variables";
 @import "variables";
 
 .navigation {
     @include flex-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(4, 122, 237);
+    background-color: $font-blue-color;
     font-weight: 300;
 
     .navigation__logo {
-        font-size: 30px;
-        color:$font-color;
+        @include header($font-light-color);
     }
     
     .navigation__item {
-        padding: 10px;
-        text-decoration: none;
-        color: $font-color;
+        @include nav-bar(white);
     }
     
     .navigation__item:hover {
         border-bottom: 2px solid white;
+    }
+
+    .example__img{
+        width: 100%;
+    }
+
+    .example__npm{
+        width: 60%;
     }
 }
 

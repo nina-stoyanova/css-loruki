@@ -1,0 +1,42 @@
+@import "buttons-mixins";
+@import "variables";
+
+
+.hosting{
+    @include flex-around;
+    padding: 50px 0 50px 0;
+    background-color: $font-blue-color;
+
+    .hosting__header{
+        width: 50%;
+        text-align: center;
+
+        .hosting__title{
+            margin: 3rem 0 2rem 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: $font-light-color;
+        }
+
+        .hosting__description{
+            margin-bottom: 2rem;
+            color: $font-light-color;
+        }
+
+        .read-more{
+            @include read-more;
+            background-color:  black;
+            }
+    }
+
+    .hosting__visual{
+        width: 35%;
+
+        .clouds{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
