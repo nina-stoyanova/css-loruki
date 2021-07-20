@@ -1,35 +1,31 @@
-@import "mixins";
+@import "layout-mixins";
 @import "variables";
+@import "buttons-mixins";
 
 .title {
     @include flex-around;
     align-items: center;
-    background-color: rgb(4, 122, 237);
+    background-color: $font-blue-color;
     padding-top: 95px;
     padding-bottom: 50px;
 
     .title__info {
-        color: $font-color;
+        color: $font-light-color;
         flex-basis: 50%;
     }
 
     .title__heading {
-        font-weight: 300;
-        font-size: 2.4rem;
+        @include title-heading($font-light-color);
         padding-bottom: 20px;
     }
 
     .title__link {
-        border-radius: 6px;
-        padding: 10px 25px 10px 25px;
+        @include read-more;
         border: 1px white solid;
-        color: $font-color;
-        text-decoration: none;
-        font-weight: 300;
     }
 
     .title__description{
-        font-weight: 300;
+        @include text-description($font-light-color);
         padding-bottom: 20px;
     }
 }

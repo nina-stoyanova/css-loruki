@@ -1,0 +1,39 @@
+@mixin header($font-light-color) {
+    color: $font-light-color;
+    font-size: 30px;
+  }
+
+@mixin nav-bar($font-light-color) {
+    color: $font-light-color;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@mixin title-heading($font-light-color){
+    color:$font-light-color;
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+@mixin text-description($font-light-color){
+    color: $font-light-color;
+    font-weight: 300;
+}
+
+@mixin demo-heading($font-light-color){
+    color: $font-light-color;
+    font-weight: 300;
+}
+
+@mixin statistics-heading($font-light-color){
+    color: $font-light-color;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@mixin stats-numbers($font-light-color){
+    color: $font-light-color;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}

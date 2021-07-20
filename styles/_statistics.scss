@@ -3,8 +3,7 @@
     text-align: center;
 
     .statistics__heading {
-        font-size: 1rem;
-        font-weight: 400;
+        @include statistics-heading(black);
     }
 }
 
