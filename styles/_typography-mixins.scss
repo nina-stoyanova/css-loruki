@@ -5,8 +5,6 @@
 
 @mixin nav-bar($font-light-color) {
     color: $font-light-color;
-    padding: 10px;
-    text-decoration: none;
 }
 
 @mixin title-heading($font-light-color){
