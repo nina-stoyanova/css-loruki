@@ -16,6 +16,8 @@
     
     .navigation__item {
         @include nav-bar(white);
+        padding: 10px;
+    text-decoration: none;
     }
     
     .navigation__item:hover {

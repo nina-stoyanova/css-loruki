@@ -1,0 +1,42 @@
+.footer{
+    @include flex-around;
+    background-color: gray;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .footer__logo{
+
+        .footer__logo-name{
+            @include header($font-light-color);  
+            padding-bottom: 0.5rem;
+        }
+    
+        .footer__logo-copyright{
+            color:$font-light-color;
+        }
+    }
+
+    .footer__navigation{
+        color: $font-light-color;
+
+        .footer__navigation-home{
+            padding-bottom: 0.5rem;
+        }
+
+        .footer__navigation-features{
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .footer__connections{
+        color: $font-light-color;
+        
+        .github, .facebook, .insta{
+            padding-right: 0.5rem;
+        }
+        
+    }
+   
+}
+

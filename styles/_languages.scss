@@ -1,3 +1,6 @@
+@import "variables";
+
+
 .languages{
     
     .languages__heading{
@@ -9,12 +12,11 @@
     }
 
     .languages__logos{
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
 
         .languages__logo{
             width: 12%;
-            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+            box-shadow: $shadow-light;
             border-radius: 6px;
             transition:transform 0.5s;
 
