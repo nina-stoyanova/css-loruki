@@ -4,26 +4,31 @@
 .features-title{
     @include flex-between;
     background-color: $font-blue-color;
-    padding-bottom: 4rem;
     padding-top: 4rem;
     color: $font-light-color;
 
-    .features__title-name{
-        font-size: 3rem;
-        font-weight: 300;
-        padding-bottom: 1rem;
-    }
+    .features__title{
+        width: 50%;
 
+        .features__title-name{
+            font-size: 4rem;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+    }
+    
     .features__title-description{
         font-weight: 300;
+        font-size: 1.2rem;
     }
 
     .features__title-visual{
-        padding-right: 5rem;
+        width: 25%;
 
         .server{
             width: 100%;
-            height: 100%;
+            
         }
     }
+    
 }

@@ -1,0 +1,66 @@
+
+.cards{
+
+    .cards__mini-server{
+        display: flex;
+        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+
+        .cards__mini-server-visual{
+            padding-right: 1rem;
+        }
+
+        .cards__mini-server-description{
+            color: darkslategrey;
+            font-weight: 300;
+        }
+    }
+
+    .cards__network{
+        display: flex;
+        justify-content: space-between;
+        
+
+        .cards__network-connection{
+            width: 60%;
+            height: 4rem;
+            display: flex;
+            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+
+            .cards__network-connection-visual{
+                padding-right: 1rem;
+            }
+
+            .cards__network-connection-description{
+                color: darkslategrey;
+                font-weight: 300;
+            }
+        }
+
+        .cards__network-computer{
+            width: 30%;
+            display: flex;
+            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+
+            .cards__network-computer-visual{
+                padding-right: 1rem;
+            }
+
+            .cards__network-computer-description{
+                color: darkslategrey;
+                font-weight: 300;
+            }
+        }
+    }
+}

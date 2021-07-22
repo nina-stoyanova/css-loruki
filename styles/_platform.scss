@@ -1,0 +1,30 @@
+@import "layout-mixins";
+
+.platform{
+    @include flex-between;
+    background-color: #f1f2f3;
+    padding-top: 4rem;
+
+    .platform__info{
+        width: 50%;
+
+        .platform__info-name{
+            font-size: 2rem;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+
+        .platform__info-description{
+            color: darkslategray;
+            font-weight: 300;
+        }
+    }
+
+    .platform__visual{
+        width: 30%;
+
+        .server2{
+            width: 100%;
+        }
+    }
+}
