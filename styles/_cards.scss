@@ -3,11 +3,7 @@
 
     .cards__mini-server{
         display: flex;
-        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-top: 2rem;
-        border-radius: 5px;
+        @include shadow-boxes;
 
         .cards__mini-server-visual{
             padding-right: 1rem;
@@ -28,11 +24,7 @@
             width: 60%;
             height: 4rem;
             display: flex;
-            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            margin-top: 2rem;
-            border-radius: 5px;
+            @include shadow-boxes;
 
             .cards__network-connection-visual{
                 padding-right: 1rem;
@@ -47,11 +39,7 @@
         .cards__network-computer{
             width: 30%;
             display: flex;
-            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            margin-top: 2rem;
-            border-radius: 5px;
+            @include shadow-boxes;
 
             .cards__network-computer-visual{
                 padding-right: 1rem;
@@ -62,5 +50,55 @@
                 font-weight: 300;
             }
         }
+
     }
-}
+
+    .power{
+        @include flex-between;
+
+        .power__batery{
+            width: 30%;
+            display: flex;
+            @include shadow-boxes;
+
+            .power__batery-visual{
+                padding-right: 1rem;
+            }
+
+            .power__batery-description{
+                color: darkslategrey;
+                font-weight: 300;
+            }
+        }
+
+        .power__poweroff{
+            width: 30%;
+            display: flex;
+            @include shadow-boxes;
+
+            .power__poweroff-visual{
+                padding-right: 1rem;
+            }
+
+            .power__poweroff-description{
+                color: darkslategrey;
+                font-weight: 300;
+            }
+        }
+
+        .power__upload{
+            width: 30%;
+            display: flex;
+            @include shadow-boxes;
+
+            .power__upload-visual{
+                padding-right: 1rem;
+            }
+
+            .power__upload-description{
+                color: darkslategrey;
+                font-weight: 300;
+            }
+            }
+        }
+    }
