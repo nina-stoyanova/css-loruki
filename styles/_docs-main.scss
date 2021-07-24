@@ -1,0 +1,32 @@
+@import "layout-mixins";
+@import "variables";
+
+.main{
+    @include flex-between;
+     
+        .essentials{
+            width: 30%;
+            @include shadow-boxes;
+            background-color: #f1f2f3;
+        }
+
+        .introduction{
+            width: 60%;
+        }
+
+        .link{
+            display: block;
+            text-decoration: none;
+            border-bottom: 1px solid lightslategray;
+            padding-bottom: 0.5rem;
+            font-size: 1rem;
+            color: black;
+            font-weight: 300;
+        }
+
+        .essentials__title{
+            padding-top: 1rem;
+             padding-bottom: 1rem;
+             font-size: 1.2rem;
+        }
+}

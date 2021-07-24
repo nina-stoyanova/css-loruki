@@ -1,0 +1,29 @@
+@import "layout-mixins";
+@import "variables";
+@import "responsive-mixins";
+
+.docs-title{
+    @include flex-between;
+    background-color: $font-blue-color;
+    padding-top: 4rem;
+    color: $font-light-color;
+
+    .docs__title{
+        width: 50%;
+        padding-left: 2rem;
+
+        .docs__title-name{
+            font-size: 4rem;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .docs__title-visual{
+        width: 30%;
+
+        .docs__title-image{
+            width: 100%;
+        }
+    }
+}
