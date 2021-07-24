@@ -28,3 +28,14 @@
         }
     }
 }
+
+@include for-mobile{
+
+    .platform{
+        .platform__info{
+            width: 60%;
+            margin-left: 2rem;
+        }
+    }
+    
+}

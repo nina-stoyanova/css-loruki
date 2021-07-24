@@ -1,104 +1,41 @@
+@import "responsive-mixins";
 
-.cards{
+.card{
+    display: flex;
+    @include shadow-boxes;
 
-    .cards__mini-server{
-        display: flex;
-        @include shadow-boxes;
-
-        .cards__mini-server-visual{
-            padding-right: 1rem;
-        }
-
-        .cards__mini-server-description{
-            color: darkslategrey;
-            font-weight: 300;
-        }
+    &-image {
+        padding-right: 1rem;
     }
 
-    .cards__network{
-        display: flex;
-        justify-content: space-between;
-        
-
-        .cards__network-connection{
-            width: 60%;
-            height: 4rem;
-            display: flex;
-            @include shadow-boxes;
-
-            .cards__network-connection-visual{
-                padding-right: 1rem;
-            }
-
-            .cards__network-connection-description{
-                color: darkslategrey;
-                font-weight: 300;
-            }
-        }
-
-        .cards__network-computer{
-            width: 30%;
-            display: flex;
-            @include shadow-boxes;
-
-            .cards__network-computer-visual{
-                padding-right: 1rem;
-            }
-
-            .cards__network-computer-description{
-                color: darkslategrey;
-                font-weight: 300;
-            }
-        }
-
+    &-text {
+        color: darkslategrey;
+        font-weight: 300;
     }
 
-    .power{
-        @include flex-between;
-
-        .power__batery{
-            width: 30%;
-            display: flex;
-            @include shadow-boxes;
-
-            .power__batery-visual{
-                padding-right: 1rem;
-            }
-
-            .power__batery-description{
-                color: darkslategrey;
-                font-weight: 300;
-            }
-        }
-
-        .power__poweroff{
-            width: 30%;
-            display: flex;
-            @include shadow-boxes;
-
-            .power__poweroff-visual{
-                padding-right: 1rem;
-            }
-
-            .power__poweroff-description{
-                color: darkslategrey;
-                font-weight: 300;
-            }
-        }
-
-        .power__upload{
-            width: 30%;
-            display: flex;
-            @include shadow-boxes;
-
-            .power__upload-visual{
-                padding-right: 1rem;
-            }
-
-            .power__upload-description{
-                color: darkslategrey;
-                font-weight: 300;
-            }
-            }
-        }
+    &-small {
+        width: 30%;
     }
+
+    &-medium {
+        width: 65%;
+    }
+
+}
+
+// for mobile phones
+
+@include for-mobile{
+    
+    .d-flex{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        text-align: center;
+        width: 100%;
+    } 
+}
+
+
+
