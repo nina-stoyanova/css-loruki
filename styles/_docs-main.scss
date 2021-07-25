@@ -8,10 +8,14 @@
             width: 30%;
             @include shadow-boxes;
             background-color: #f1f2f3;
-        }
+            padding-top: 3rem;
+            padding-bottom: 3rem;
 
-        .introduction{
-            width: 60%;
+            .essentials__title{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                font-size: 1.2rem;
+            }
         }
 
         .link{
@@ -20,13 +24,68 @@
             border-bottom: 1px solid lightslategray;
             padding-bottom: 0.5rem;
             font-size: 1rem;
-            color: black;
+            color: gray;
             font-weight: 300;
+
+            &:hover{
+                color:black;
+                font-weight: 400;
+            }
         }
 
-        .essentials__title{
-            padding-top: 1rem;
-             padding-bottom: 1rem;
-             font-size: 1.2rem;
+        .introduction{
+            width: 60%;
+            @include shadow-boxes;
+
+            .introduction__title{
+                font-weight: 300;
+                margin-top: 2rem;
+                padding-bottom: 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .introduction__text{
+                font-weight: 300;
+                margin-bottom: 1rem;
+                padding-top: 1rem;
+            }
+
+            .exclamation-mark-text{
+                display: flex;
+                align-items: center;
+                background-color: green;
+                color: white;
+                margin-top: 1rem;
+            }
+
+            .bold-text{
+                font-weight: 400;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+
+            .install{
+                @include read-more;
+                background-color: $font-blue-color;
+            }
+
+            .dark-text{
+                background-color: black;
+                color: white;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+            
         }
+
+       
+
+
+
+       
+
+
 }
