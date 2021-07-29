@@ -6,7 +6,7 @@
     margin-top: 50px;
 
     .example__img{
-        width: 600px;
+        width: 90%;
         border-radius: 7px;
     }
     
@@ -22,4 +22,11 @@
         box-shadow: $shadow-light;
     }
 }    
+
+@include for-mobile{
+    .example{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
 

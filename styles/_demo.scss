@@ -22,7 +22,7 @@
     .demo__form__submit {
         display: block;
         padding: 8px 28px;
-        background-color: $font-blue-color;
+        //background-color: map-get($colorMap, "lightblue");
         color: $font-light-color;
         border-radius: 5px;
         border-color: $font-blue-color;

@@ -3,13 +3,23 @@
 
 .main{
     @include flex-between;
+
+    @include for-mobile{
+        flex-direction: column;
+    }
      
         .essentials{
             width: 30%;
             @include shadow-boxes;
-            background-color: #f1f2f3;
+            // background-color: #f1f2f3;
+            background-color:theme-aware("background-color");
             padding-top: 3rem;
             padding-bottom: 3rem;
+
+            @include for-mobile{
+                width: 100%;
+                text-align: center;
+            }
 
             .essentials__title{
                 padding-top: 1rem;
@@ -36,6 +46,11 @@
         .introduction{
             width: 60%;
             @include shadow-boxes;
+
+            @include for-mobile{
+                width: 100%;
+                text-align: center;
+            }
 
             .introduction__title{
                 font-weight: 300;
@@ -67,6 +82,7 @@
             .install{
                 @include read-more;
                 background-color: $font-blue-color;
+                
             }
 
             .dark-text{

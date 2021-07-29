@@ -8,9 +8,19 @@
     padding-top: 4rem;
     color: $font-light-color;
 
+    @include for-mobile{
+        flex-direction: column;
+    }
+
     .docs__title{
         width: 50%;
         padding-left: 2rem;
+
+        @include for-mobile{
+            width: 100%;
+            padding-left: 0;
+            text-align: center;
+        }
 
         .docs__title-name{
             font-size: 4rem;
@@ -21,6 +31,10 @@
 
     .docs__title-visual{
         width: 30%;
+
+        @include for-mobile{
+            width: 100%;
+        }
 
         .docs__title-image{
             width: 100%;

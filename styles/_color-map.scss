@@ -1,0 +1,9 @@
+$colorMap: (
+    "lightcolor": white,
+    "lightblue": adjust-color($font-blue-color, $lightness:30%)
+);
+
+//use like:
+// color: map-get($colorMap, "lightcolor");
+//background-color: map-get($colorMap, "lightblue");
+
