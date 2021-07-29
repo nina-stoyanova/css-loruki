@@ -1,0 +1,35 @@
+$light-theme: false;
+
+@function theme-aware($property){
+    @if $light-theme {
+        @return white;
+    }
+    @else {
+        @return gray;
+    }
+}
+
+//use to change the theme color
+//background-color:theme-aware("background-color");
+
+
+
+
+// @mixin theme-colors($light-theme: true) {
+//     @if $light-theme {
+//       background-color: $light-background;
+//       color: $light-text;
+//     } @else {
+//       background-color: $dark-background;
+//       color: $dark-text;
+//     }
+//   }
+  
+
+// @function pow($base, $exponent) {
+//     $result: 1;
+//     @for $_ from 1 through $exponent {
+//       $result: $result * $base;
+//     }
+//     @return $result;
+//   }

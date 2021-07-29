@@ -1,4 +1,5 @@
 @import "variables";
+@import "responsive-mixins";
 
 
 .languages{
@@ -24,6 +25,7 @@
                 transform: translateY(-10px);
             }
         }
+       
 
         .languages__logo__img{
             width: 70%;
@@ -38,4 +40,14 @@
     }
 
    
+}
+
+@include for-mobile{
+    .languages__logos{
+        flex-wrap: wrap;
+
+        .languages__logo{
+            min-width: 120px;
+        }
+    }
 }

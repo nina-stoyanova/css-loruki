@@ -1,6 +1,7 @@
 @import "layout-mixins";
 @import "variables";
 @import "buttons-mixins";
+@import "responsive-mixins";
 
 .title {
     @include flex-around;
@@ -31,7 +32,33 @@
 }
 
 
+@include for-mobile{
 
+
+    .navigation__items{
+        display: flex;
+    }
+
+    .title{
+       display: flex;
+       flex-direction: column;
+
+       .title__info{
+            text-align: center;
+            max-width: 250px;
+
+            .title__link{
+                margin-bottom: 1rem;
+            }
+       }
+    }
+
+    
+
+  
+
+    
+}
 
 
 

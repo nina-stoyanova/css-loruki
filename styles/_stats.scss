@@ -30,3 +30,13 @@
     }
 }
 
+@include for-mobile{
+    .stats-items{
+        flex-direction: column;
+
+        .stats-item{
+            margin-bottom: 1rem;
+        }
+    }
+
+}

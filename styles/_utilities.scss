@@ -2,3 +2,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+
+// .m-1{
+//     margin: 0.2rem;
+// }  mb-3
+
+// .m-2{
+//     margin: 0.5rem;
+// }
+
+$margins: 1, 2; //list
+
+@each $margin in $margins {
+    .m-#{$margin}{
+        margin: #{$margin}rem;
+    }
+}

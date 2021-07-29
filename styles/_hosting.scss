@@ -7,9 +7,18 @@
     padding: 50px 0 50px 0;
     background-color: $font-blue-color;
 
+
+    @include for-mobile{
+            flex-direction: column; 
+    }
+
     .hosting__header{
         width: 50%;
         text-align: center;
+
+        @include for-mobile{
+            width: 100%;
+        }
 
         .hosting__title{
             margin: 3rem 0 2rem 0;
@@ -33,9 +42,13 @@
     .hosting__visual{
         width: 35%;
 
+        @include for-mobile{
+            width: 100%;
+        }
+
         .clouds{
             width: 100%;
-            height: 100%;
+            height: auto;
         }
     }
 
