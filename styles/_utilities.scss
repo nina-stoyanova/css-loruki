@@ -1,3 +1,6 @@
+//use in html 
+
+
 .d-flex{
     display: flex;
     justify-content: space-between;
@@ -13,6 +16,7 @@
 //     margin: 0.5rem;
 // }
 
+
 $margins: 1, 2; //list
 
 @each $margin in $margins {
@@ -20,3 +24,20 @@ $margins: 1, 2; //list
         margin: #{$margin}rem;
     }
 }
+
+//pt-1, pt-2
+//pb-1, pb-2 
+
+$paddings: 1, 2;
+$spacer: 10px;
+
+@each $padding in $paddings {
+    .pt-#{$padding}{
+        padding-top: #{$padding}rem
+    }
+    .pb-#{$padding}{
+        padding-bottom: #{$padding}rem
+    }
+}
+
+//do it like bootstrap

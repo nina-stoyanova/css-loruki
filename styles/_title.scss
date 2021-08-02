@@ -2,11 +2,13 @@
 @import "variables";
 @import "buttons-mixins";
 @import "responsive-mixins";
+@import "color-map";
+@import "functions";
 
 .title {
     @include flex-around;
     align-items: center;
-    background-color: $font-blue-color;
+    background-color:theme-aware("background-color");
     padding-top: 95px;
     padding-bottom: 50px;
 
