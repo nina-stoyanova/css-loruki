@@ -2,7 +2,7 @@
 
 
 .demo {
-    background-color: $font-light-color;
+    background-color: map-get($colorMap, "lightcolor");
     padding: 40px;
     border-radius: 10px;
     flex-basis: 30%;
@@ -20,13 +20,12 @@
     }
     
     .demo__form__submit {
+        @include read-more;
         display: block;
         padding: 8px 28px;
-        //background-color: map-get($colorMap, "lightblue");
-        color: $font-light-color;
-        border-radius: 5px;
-        border-color: $font-blue-color;
+        background-color: $font-darkblue-color;
         margin-top: 30px;
+
     }
     
 

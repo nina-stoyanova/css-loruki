@@ -5,7 +5,7 @@
 .hosting{
     @include flex-around;
     padding: 50px 0 50px 0;
-    background-color: $font-blue-color;
+    background-color:theme-aware("background-color");
 
 
     @include for-mobile{

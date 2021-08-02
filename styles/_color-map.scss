@@ -1,9 +1,13 @@
+@import "variables";
+
 $colorMap: (
     "lightcolor": white,
-    "lightblue": adjust-color($font-blue-color, $lightness:30%)
+    "darkblue": adjust-color($font-darkblue-color, $blackness:30%),
+    "lightblue": adjust-color($font-darkblue-color, $lightness:30%)
 );
 
 //use like:
 // color: map-get($colorMap, "lightcolor");
-//background-color: map-get($colorMap, "lightblue");
-
+//background-color: map-get($colorMap, "darkblue");
+//can also be &lightness:30%
+ 

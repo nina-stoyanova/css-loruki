@@ -4,7 +4,7 @@
 
 .docs-title{
     @include flex-between;
-    background-color: $font-blue-color;
+    background-color:theme-aware("background-color");
     padding-top: 4rem;
     color: $font-light-color;
 

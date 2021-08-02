@@ -1,0 +1,176 @@
+//Keyframes rule is added to the div with class animations
+
+// .animations{
+//     height: 200px;
+//     width: 200px;
+//     background-color: red;
+//     animation-name: animations; //the name of the div 
+//     animation-duration:4s; //how long an animation will take to comlpete, by default is 0s
+// }
+
+// @keyframes animations{ 
+//     from{background-color: red;}
+//     to{background-color: yellow;}
+// }
+
+// @keyframes animations{  //changes when is 25%, 50% and 100% complete the animation
+//     0%   {background-color: red;}
+//     25%  {background-color: yellow;}
+//     50%  {background-color: blue;}
+//     100% {background-color: green;}
+// }
+
+
+
+//POSITION RELATIVE
+
+// .animations{
+//     height: 200px;
+//     width: 200px;
+//     background-color: red;
+//     animation-name: animations;
+//     animation-duration:4s;
+//     position: relative; //when you want to move
+// }
+
+
+// @keyframes animations{
+//     0%   {background-color:red; left:0px; top:0px;}
+//     25%  {background-color:yellow; left:200px; top:0px;}
+//     50%  {background-color:blue; left:200px; top:200px;}
+//     75%  {background-color:green; left:0px; top:200px;}
+//     100% {background-color:red; left:0px; top:0px;}
+// }
+
+
+
+//ANIMATION-DELAY: +2s
+
+// .animations{
+//     height: 200px;
+//     width: 200px;
+//     background-color: red;
+//     animation-name: animations;
+//     animation-duration:4s;
+//     position: relative;
+//     animation-delay: 2s; //start 2s later
+// }
+
+// @keyframes animations{
+//     0%   {background-color:red; left:0px; top:0px;}
+//     25%  {background-color:yellow; left:200px; top:0px;}
+//     50%  {background-color:blue; left:200px; top:200px;}
+//     75%  {background-color:green; left:0px; top:200px;}
+//     100% {background-color:red; left:0px; top:0px;}   
+// }
+
+
+
+//ANIMATION-DELAY: -2s
+
+// .animations{
+//     height: 200px;
+//     width: 200px;
+//     background-color: red;
+//     animation-name: animations;
+//     animation-duration:4s;
+//     position: relative;
+//     animation-delay: -2s; //started before 2s, so you actually miss the first 2s of it
+// }
+
+// @keyframes animations{
+//     0%   {background-color:red; left:0px; top:0px;}
+//     25%  {background-color:yellow; left:200px; top:0px;}
+//     50%  {background-color:blue; left:200px; top:200px;}
+//     75%  {background-color:green; left:0px; top:200px;}
+//     100% {background-color:red; left:0px; top:0px;}   
+// }
+
+
+
+// ANIMATION ITERATION COUNT - 3
+
+// .animations{
+//   width: 100px;
+//   height: 100px;
+//   position: relative;
+//   background-color: red;
+//   animation-name: animations;
+//   animation-duration: 4s;
+//   animation-iteration-count: 3; //will show for 3times
+// }
+
+// @keyframes animations{
+//     0%   {background-color:red; left:0px; top:0px;}
+//     25%  {background-color:yellow; left:200px; top:0px;}
+//     50%  {background-color:blue; left:200px; top:200px;}
+//     75%  {background-color:green; left:0px; top:200px;}
+//     100% {background-color:red; left:0px; top:0px;}   
+// }
+
+
+
+// ANIMATION ITERATION COUNT - INFINITE
+
+// .animations{
+//   width: 100px;
+//   height: 100px;
+//   position: relative;
+//   background-color: red;
+//   animation-name: animations;
+//   animation-duration: 4s;
+//   animation-iteration-count: infinite; //will show for forever
+// }
+
+// @keyframes animations{
+//     0%   {background-color:red; left:0px; top:0px;}
+//     25%  {background-color:yellow; left:200px; top:0px;}
+//     50%  {background-color:blue; left:200px; top:200px;}
+//     75%  {background-color:green; left:0px; top:200px;}
+//     100% {background-color:red; left:0px; top:0px;}   
+// }
+
+
+
+
+// ANIMATION DIRECTION - REVERSE, ALTERNATE, ALTERNATE-REVERSE(both ways)
+
+// .animations{
+//     width: 100px;
+//     height: 100px;
+//     position: relative;
+//     background-color: red;
+//     animation-name: animations;
+//     animation-duration: 4s;
+//     animation-direction: reverse; 
+//   }
+  
+//   @keyframes animations{
+//       0%   {background-color:red; left:0px; top:0px;}
+//       25%  {background-color:yellow; left:200px; top:0px;}
+//       50%  {background-color:blue; left:200px; top:200px;}
+//       75%  {background-color:green; left:0px; top:200px;}
+//       100% {background-color:red; left:0px; top:0px;}   
+//   }
+
+
+
+//ANIMATION TIMING FUNCTION - LINEAR, EASY, EASY-IN, EASY-OUT, EASY-IN-OUT
+
+// .animations{
+//     width: 100px;
+//     height: 100px;
+//     position: relative;
+//     background-color: red;
+//     animation-name: animations;
+//     animation-duration: 4s;
+//     animation-timing-function: easy; //slow start then fast then slow end
+//   }
+  
+//   @keyframes animations{
+//       0%   {background-color:red; left:0px; top:0px;}
+//       25%  {background-color:yellow; left:200px; top:0px;}
+//       50%  {background-color:blue; left:200px; top:200px;}
+//       75%  {background-color:green; left:0px; top:200px;}
+//       100% {background-color:red; left:0px; top:0px;}   
+//   }

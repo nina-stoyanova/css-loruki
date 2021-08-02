@@ -1,5 +1,6 @@
 @import "layout-mixins";
 @import "variables";
+@import "functions";
 
 .main{
     @include flex-between;
@@ -11,8 +12,7 @@
         .essentials{
             width: 30%;
             @include shadow-boxes;
-            // background-color: #f1f2f3;
-            background-color:theme-aware("background-color");
+            background-color: #f1f2f3;
             padding-top: 3rem;
             padding-bottom: 3rem;
 
@@ -81,7 +81,7 @@
 
             .install{
                 @include read-more;
-                background-color: $font-blue-color;
+                background-color: $font-darkblue-color;
                 
             }
 

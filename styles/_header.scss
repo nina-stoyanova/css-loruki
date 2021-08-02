@@ -2,12 +2,13 @@
 @import "typography-mixins";
 @import "variables";
 @import "variables";
+@import "functions";
 
 .navigation {
     @include flex-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: $font-blue-color;
+    background-color:theme-aware("background-color");
     font-weight: 300;
 
     .navigation__logo {

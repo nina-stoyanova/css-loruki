@@ -3,11 +3,14 @@
 @mixin read-more{
     border-radius: 6px;
     padding: 10px 25px 10px 25px;
-    // color: $font-light-color;
     color: map-get($colorMap, "lightcolor");
     text-decoration: none;
     font-weight: 300;
     display: inline-block;
+
+    &:hover{
+        background-color:map-get($colorMap, "darkblue"); ;
+    }
 }
 
 @mixin shadow-boxes{
