@@ -1,11 +1,27 @@
-.statistics__info {
-    margin-top: 80px;
-    text-align: center;
+ .statistics{
+    position: relative;
+        animation-name: bottom-top;
+        animation-duration: 0.8s;
+        animation-direction: reverse;
+        animation-timing-function: ease-out;
+    
+        @keyframes bottom-top{
+            0% {bottom: 0px; top: 0px;}
+            100% {bottom: 0px; top: 300px;}
+        }
+     
+        .statistics__info {
+            margin-top: 80px;
+            text-align: center;
+            
+            .statistics__heading {
+                @include statistics-heading(black);
+            }
+        }
+ }
+ 
+ 
 
-    .statistics__heading {
-        @include statistics-heading(black);
-    }
-}
 
 
 

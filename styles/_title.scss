@@ -15,6 +15,15 @@
     .title__info {
         color: $font-light-color;
         flex-basis: 50%;
+        position: relative;
+        animation-name: left-right;
+        animation-duration:0.8s;
+        animation-timing-function: ease-out;
+
+        @keyframes left-right{
+            0% {left:-300px; top:0px;}
+            100% {left: 0px; top:0px;}
+        }
     }
 
     .title__heading {
@@ -35,7 +44,6 @@
 
 
 @include for-mobile{
-
 
     .navigation__items{
         display: flex;

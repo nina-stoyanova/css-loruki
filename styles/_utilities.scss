@@ -7,17 +7,7 @@
 }
 
 
-
-// .m-1{
-//     margin: 0.2rem;
-// }  mb-3
-
-// .m-2{
-//     margin: 0.5rem;
-// }
-
-
-$margins: 1, 2; //list
+$margins: 1,2;
 
 @each $margin in $margins {
     .m-#{$margin}{
@@ -25,8 +15,6 @@ $margins: 1, 2; //list
     }
 }
 
-//pt-1, pt-2
-//pb-1, pb-2 
 
 $paddings: 1, 2;
 $spacer: 10px;
@@ -40,4 +28,4 @@ $spacer: 10px;
     }
 }
 
-//do it like bootstrap
+

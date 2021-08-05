@@ -3,8 +3,6 @@
 $light-theme: false;
 $dark-theme: true;
 
-
-
 @function theme-aware($property){
     @if $light-theme {
         @return $font-lightblue-color;
@@ -13,8 +11,4 @@ $dark-theme: true;
         @return $font-darkblue-color;
     }
 }
-
-//use to change the theme color
-//background-color:theme-aware("background-color");
-
 
